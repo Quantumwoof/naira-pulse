@@ -72,7 +72,11 @@ def main() -> int:
         print("\nDemo expectations failed: quiet must be silent, alert must ping.", file=sys.stderr)
         return 1
 
+    # Leave store in quiet scenario so a follow-up AgentCore/app.py invoke
+    # is not stuck on the alert seed from the second run.
+    seed_quiet_scenario(as_of=date.today())
     print("\nDemo OK — quiet stayed quiet; alert pinged for a decision.")
+    print("(Store reset to quiet scenario for any follow-up local invokes.)")
     return 0
 
 

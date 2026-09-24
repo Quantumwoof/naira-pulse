@@ -6,7 +6,7 @@ Naira Pulse is a **background money agent** for everyday Nigerians. It watches r
 
 It is built for the **AWS Agents for Humans · Everyday Agents** hackathon using:
 
-- **Strands Agents SDK** (`strands-agents`, `strands-agents-tools`) for the agent + tool loop
+- **Strands Agents SDK** (`strands-agents`) for the agent + `@tool` loop
 - **Amazon Bedrock AgentCore** (`BedrockAgentCoreApp` in `app.py`) for runtime hosting
 - **Local JSON store** under `data/` for hackathon-friendly persistence (no bank API required)
 - **DEMO_MODE=1** (default) so judges can run without AWS credentials
